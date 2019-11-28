@@ -10,3 +10,51 @@ html {
   color: #fff;
   text-shadow: 1px 1px 100px rgba(255, 255, 255, .7);
 }
+
+.btn-ghost {
+  color: #b4fff4;
+  border-color: #90ccc3;
+  border-radius: 10px;
+  padding-bottom: 1em;
+}
+
+.btn-ghost:hover {
+  color: #b4fff4;
+  border-color: #90ccc3;
+  background-color: rgba(180, 255, 244, .2);
+}
+
+.btn-ghost:active,
+.btn-ghost:focus {
+  color: #b4fff4;
+  border-color: #90ccc3;
+  background-color: rgba(180, 255, 244, .2);
+}
+
+.btn-ghost::after {
+  content: " ";
+  border-bottom: 3px solid #b4fff4;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+}
+
+.btn-ghost:active {
+  padding-bottom: .75em;
+}
+
+.btn-ghost .icon {
+  transform: translate(.2em, -.2em);
+  transition: all 250ms ease-in-out;
+}
+
+.btn-ghost:hover .icon,
+.btn-ghost:active .icon,
+.btn-ghost:focus .icon {
+  transform: translate(.2em, -.4em);
+}
+
+.btn-wrap {
+  height: 4.75rem;
+}
